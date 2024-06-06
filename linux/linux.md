@@ -22,9 +22,18 @@
 
 - ## Les commandes du terminal
 
+    ### Cheat Sheet : https://cheatography.com/davechild/cheat-sheets/linux-command-line/
 
-| commande | A quoi elle sert |
-| - | - |
-| ls | Permet de lister le contenu du répertoire courant (actuel) |
-| cd | aller dans le répertoire home |
-| git commit -m "message descriptif" | Enregistre des instantanés de fichiers de façon permanente dans l'historique des versions |
+
+    | commande | A quoi elle sert |
+    | - | - |
+    | ls | Permet de lister le contenu du répertoire courant (actuel) |
+    | cd | aller dans le répertoire home |
+    | cd .. | Remonte d'un dossier |
+    | cd *dir* | Accède au dossier *dir* |
+    | mkdir *dir* | Créer un dossier avec le nom *dir* |
+    | pwd | Affiche le lien du dossier actuel |
+    | touch *file* | Créer un fichier avec le nom *file* |
+    | cp *file1* *file2* | Copie *file1* dans *file2* |
+    | mv *file1* *file2* | Déplace *file1* dans *file2* |
+    | rm *file* | Supprime *file* |
