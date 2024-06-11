@@ -17,9 +17,12 @@ Qu'est ce qu'une base de donnée : https://www.data-bird.co/blog/base-de-donnees
 
     | Termes | Définition |
     | - | - |
-    | S.G.B.D | Systèmede gestion de base de donnée, sert à gérer grace à une interface graphique des bases dedonnées |
-    | Crtl + Y  | Revenir en avant |
-    | Ctrl + D  | Sélectionner plusieurs fois un même mot |
-    | Crtl + VerMaj + L  | Sélectionner toute une ligne |
-    | Maj + Alt + Flèche du bas  | Dupliquer une ligne en dessous |
-    | Maj + Alt + Flèche du haut  | Dupliquer une ligne en dessus |
+    | SGBD | Systèmede gestion de base de donnée, sert à gérer grace à une interface graphique des bases dedonnées |
+    | SQL | Language de requête qui permet de manipuler, afficher des données d'une base de données |
+    | Banque de données | Contient des bases de données |
+    | bases de données | Système permettant le stockage de données |
+    | Tables | tableau composé de lignes et de colonnes contenant les données |
+    | lignes d'enregistrement | Lignes d'un tableau chacune représentant un objet |
+    | Colonnes | Chaques données appartenant à un objet. |
+    | Clés | Colonnes permettant de mettre en relation différentes tables contenant les mêmes objets mais avec différentes données |
+    | Relations | Lien entre les données des différentes tables |
