@@ -8,7 +8,7 @@
     | Crtl + Y  | Revenir en avant |
     | Ctrl + D  | Sélectionner plusieurs fois un même mot |
     | Crtl + VerMaj + L  | Sélectionner toute une ligne |
-    | Ctrl + Maj + Flèche du bas / Flèche du haut | Ajouter un surseur en dessous / en dessus |
+    | Ctrl + Maj + Flèche du bas / Flèche du haut | Ajouter un curseur en dessous / en dessus |
     | Maj + Alt + Flèche du bas  | Dupliquer une ligne en dessous |
     | Maj + Alt + Flèche du haut  | Dupliquer une ligne en dessus |
     | Maj + Flèche du bas / Flèche du haut | Déplacer la ligne vers le bas / le haut |

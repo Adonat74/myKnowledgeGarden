@@ -48,7 +48,7 @@ https://www.ba-info.fr/la-cybersecurite-au-travail-des-responsabilites-partagees
 - ### Création et gestion des Mots de Passe.
 
     - Longueure d'au moin 12 carctères, idéalement 16.
-    - Combianaison de lettre en majuscule, minuscule, de chiffres et de caractères spéciaux.
+    - Combinaison de lettre en majuscule, minuscule, de chiffres et de caractères spéciaux.
     - Un mot de pass unique pour chaques comptes.
     - Ne doit pas comprendre d'information personnelles (nom, prénom, etc...).
     - Pas de suite consécutives de lettre ou chiffre (abcd; 1234, etc...).
