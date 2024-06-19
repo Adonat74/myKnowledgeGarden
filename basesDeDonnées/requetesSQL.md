@@ -4,7 +4,7 @@
 
 Modèle conceptuel de données :
 
-![MCD](../images/Capture%20d’écran%20du%202024-06-12%2014-00-13.png)
+![MCD](../images/MCD.png)
 
 
 ## Script de création de la base de données
