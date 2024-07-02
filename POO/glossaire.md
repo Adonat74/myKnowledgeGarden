@@ -13,10 +13,7 @@
 | Surcharge | En programmation orientée objet, la surcharge, aussi appelée « overloading », consiste à déclarer, dans une même classe, deux méthodes de même nom mais avec des sémantiques différentes. https://www.invivoo.com/zoom-heritage-encapsulation-surcharge-polymorphisme/ |
 | Interfaces | Permettent de créer du code qui spécifie quelles méthodes une classe doit implémenter, sans avoir à définir comment ces méthodes fonctionneront. https://www.php.net/manual/fr/language.oop5.interfaces.php|
 | Constructor function | fonction éxécutée à l'instanciation de l'objet avec le terme "new" https://www.learn-php.org/en/Objects |
-| $this | les variables décrivant l’état de l’objet |
-| Attributs | les variables décrivant l’état de l’objet |
-| Attributs | les variables décrivant l’état de l’objet |
-| Attributs | les variables décrivant l’état de l’objet |
+| static | Static methods can be called directly - without creating an instance of the class first. https://www.w3schools.com/php/php_oop_static_methods.asp|
 | Attributs | les variables décrivant l’état de l’objet |
 
 
@@ -57,3 +54,16 @@ Explanation:
 - Property Definition: The property public int $mentalPower; defines an instance variable mentalPower that is public.
 - Constructor: The constructor __construct initializes the mentalPower property. You can pass an initial value when creating an instance of StartrekWarrior.
 - Method getPower: The method getPower returns the value of the instance variable $this->mentalPower.
+
+## TP Zoo
+
+
+| Question | Réponse |
+| - | - |
+| C’est quoi un autoload en php ? | C'est un moyen d'inclure chaque classes dans mon code sans avoir à les inclure une à une manuellement |
+| Qu’est-ce qu’un fichier .PHAR ? | une librairie qui permet de compiler toute une application dans un seul fichier.PHAR on l'appel aussi une archive php |
+| Qu’est-ce que composer ? | c'est un gestionnaire de packages propre à php. |
+| Quel intérêt y-a-t’il à l’utiliser ? | - Enables you to declare the libraries you depend on. - Finds out which versions of which packages can and need to be installed, and installs them (meaning it downloads them into your project). - You can update all your dependencies in one command. |
+| Quelle est la version actuelle de composer ? | 2.7.7 |
+| C’est quoi PSR ? | ce sont des recommandation standard des concepts de programations en PHP |
+| C’est quoi PSR-4 ? | PSR-4 dictates the naming convention but also dictates how that naming convention translates to a filepath. |
