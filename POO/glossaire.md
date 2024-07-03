@@ -15,6 +15,8 @@
 | Constructor function | fonction éxécutée à l'instanciation de l'objet avec le terme "new" https://www.learn-php.org/en/Objects |
 | static | Static methods can be called directly - without creating an instance of the class first. https://www.w3schools.com/php/php_oop_static_methods.asp|
 | Attributs | les variables décrivant l’état de l’objet |
+| Getters | fonctions servant à donner l'attribut que l'on demande https://www.easy-micro.org/getters-et-setters.php&id=1102|
+| Setters | fonctions permettant d'assigner une valeur à un attribut https://www.easy-micro.org/getters-et-setters.php&id=1102 |
 
 
 ## $this
