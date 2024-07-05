@@ -18,7 +18,7 @@ La question est donc à la fois de… :
 
 - anticiper l'usage : chercher ce dont l'utilisateur a besoin, ce qu'il attend, ce qu'il ne veut pas.
 
-… avec l'objectif global de rendre l'utilisateur heureux. 😎
+… avec l'objectif global de rendre l'utilisateur heureux. 
 
 La dimension psychologique est très importante car pour que votre produit plaise, il devra toucher au cœur du besoin de l'utilisateur… et cela requiert de le connaître.
 
