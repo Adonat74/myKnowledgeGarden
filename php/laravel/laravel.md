@@ -7,7 +7,7 @@
 | API | C'est une application qui définit les règles qui permettent à 2 logiciels de communiquer entre eux: les routes, les méthodes CRUD, etc... |
 | REST | C'est un style d'architecture d'une API, elle est simple et standardisée |
 | MVC |signifie “Modèle, Vue, Contrôleur”, c’est un patron de conception concernant l'agencement du code. Le code est segmenté selon ces trois sections : le modèle contient le code qui gère la logique métier, la vue celui qui gère l'affichage, et le contrôleur gère le lien avec l'utilisateur. |
-|API|efef|
+| ORM | Permet de connecter L'API à la base donnée |
 |API|efef|
 |API|efef|
 |API|efef|
