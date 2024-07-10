@@ -1,5 +1,10 @@
 # Laravel et ses principes
 
+## Installation
+
+https://www.youtube.com/watch?v=szLzonMlzQk
+
+
 ## Glossaire
 
 |Termes|Définition|
