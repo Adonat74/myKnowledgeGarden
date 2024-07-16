@@ -12,6 +12,11 @@
     | Maj + Alt + Flèche du bas  | Dupliquer une ligne en dessous |
     | Maj + Alt + Flèche du haut  | Dupliquer une ligne en dessus |
     | Maj + Flèche du bas / Flèche du haut | Déplacer la ligne vers le bas / le haut |
+    | Alt + insert | Créer un nouveau fichier dans le dossier actuel |
+    | Ctrl + Tab / Ctrl + Shift + Tab | naviguer dans les fichiers ouverts |
+    | Maj + flèches | sélectionner lettre par lettre |
+    | Maj + Ctrl + flèches  | sélectionner mot par mot |
+    | Alt + F12 | ouvrir un nouveau terminal |
 
 
 
