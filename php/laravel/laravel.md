@@ -149,3 +149,12 @@ Explication du Flux de l'Application
 
 
 Cette architecture MVC en PHP/Laravel permet de séparer les responsabilités et de structurer l'application de manière organisée et maintenable.
+
+
+
+## Authentification grâce à Sanctum
+
+https://medium.com/@hendriks96/api-authenticate-how-to-authenticate-api-using-laravel-sanctum-c4eeaa99b472
+
+
+https://www.twilio.com/fr-fr/blog/api-restful-php-laravel-sanctum
