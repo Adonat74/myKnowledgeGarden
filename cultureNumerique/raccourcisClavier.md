@@ -1,6 +1,6 @@
 # Raccourcis Clavier
 
-* ## VS Code
+* ## VS Code / php storm
 
     | Raccourcis | A quoi il sert |
     | - | - |
@@ -17,6 +17,7 @@
     | Maj + flèches | sélectionner lettre par lettre |
     | Maj + Ctrl + flèches  | sélectionner mot par mot |
     | Alt + F12 | ouvrir un nouveau terminal |
+    | Ctrl + p | ouvre une barre de saisie pour trouver des fichier et le ouvrir |
 
 
 
