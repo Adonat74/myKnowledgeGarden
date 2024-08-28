@@ -23,3 +23,8 @@ let biggestCitiesSorted = cities.reduce((total, city) => {
     return total;
 }, []);
 ```
+
+
+### this keyword
+ 
+https://www.w3schools.com/js/js_this.asp
