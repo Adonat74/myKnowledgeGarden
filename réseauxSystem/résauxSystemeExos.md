@@ -223,3 +223,93 @@ Le modèle TCP/IP est la base d'Internet, plus simple et plus pratique que le mo
 
 
 ![alt text](./images/Capture%20d’écran%20du%202024-09-11%2010-25-18.png)
+
+
+
+
+# Sercvices DNS
+
+## exo 1
+
+Voici l'ordre des actions lorsque **PC10** envoie un ping à **PC11**, en supposant que **PC10** ne connaît pas l'adresse IP de **PC11** :
+
+1. **Requête DNS de PC10** :  
+   PC10 ne connaît que le nom de PC11. Il envoie donc une **requête DNS** au serveur DNS pour obtenir l'adresse IP de PC11.
+
+2. **Réponse DNS du serveur DNS** :  
+   Le serveur DNS répond à PC10 en lui donnant l'adresse IP de PC11.
+
+3. **PC10 lance la commande Ping vers PC11** :  
+   Maintenant que PC10 connaît l'adresse IP de PC11, il commence à envoyer des **paquets ICMP** (Ping) à l'adresse IP de PC11.
+
+4. **PC11 reçoit les paquets ICMP et répond** :  
+   PC11 reçoit les paquets ICMP de PC10 et envoie des **réponses ICMP** à PC10 pour confirmer la communication.
+
+5. **PC10 reçoit les réponses ICMP de PC11** :  
+   PC10 reçoit la confirmation des réponses ICMP de PC11, ce qui termine le processus de Ping.
+
+
+
+
+## exo 2
+
+
+### Noms de domaine et sous-domaines
+
+Un **nom de domaine** est une adresse web (ex. : `example.com`) qui rend l'accès aux ressources plus facile qu'en utilisant une adresse IP. Un **sous-domaine** est une extension du domaine principal, séparant différentes parties d'un site (ex. : `blog.example.com`).
+
+---
+
+### Types d'enregistrements DNS
+
+1. **A** : Lie un nom de domaine à une IP **IPv4**.
+2. **AAAA** : Lie un nom de domaine à une IP **IPv6**.
+3. **CNAME** : Redirige un domaine vers un autre domaine.
+4. **MX** : Indique les serveurs de messagerie du domaine.
+5. **NS** : Spécifie les serveurs DNS pour le domaine.
+6. **PTR** : Associe une adresse IP à un nom de domaine (DNS inversé).
+7. **TXT** : Stocke des informations textuelles, souvent pour la vérification.
+8. **SRV** : Définit des services spécifiques (ex. : SIP).
+
+Les enregistrements DNS dirigent le trafic Internet et gèrent les services comme les emails.
+
+
+
+# Protocole HTTP
+
+## exo 1
+
+### Qu'est-ce qu'une API et une API REST ?
+
+Une **API (Application Programming Interface)** est un ensemble de règles et d'outils qui permet à des logiciels de communiquer entre eux. Une **API REST** (Representational State Transfer) est un type d'API qui suit les principes REST, où les données sont accessibles via des requêtes HTTP à des **endpoints** (points d'accès), souvent en JSON ou XML.
+
+### Qu'est-ce que le protocole HTTP ?
+
+Le **protocole HTTP (Hypertext Transfer Protocol)** est un protocole utilisé pour échanger des informations sur le web. Il permet aux navigateurs et serveurs web de communiquer pour afficher des pages, envoyer des données, etc.
+
+### Méthodes disponibles avec le protocole HTTP :
+
+1. **GET** : Récupère des données d'un serveur (lecture).
+2. **POST** : Envoie des données au serveur (création).
+3. **PUT** : Remplace entièrement une ressource sur le serveur (mise à jour).
+4. **PATCH** : Modifie partiellement une ressource.
+5. **DELETE** : Supprime une ressource.
+6. **HEAD** : Similaire à GET, mais sans le corps de la réponse (métadonnées seulement).
+7. **OPTIONS** : Décrit les options de communication pour une ressource.
+
+### Différence entre HTTP et HTTPS :
+
+- **HTTP (Hypertext Transfer Protocol)** : Transfère des données sans chiffrement.
+- **HTTPS (Hypertext Transfer Protocol Secure)** : Utilise SSL/TLS pour **chiffrer** les données, garantissant la confidentialité et la sécurité des échanges.
+
+### Qu'est-ce qu'un Bearer Token ?
+
+Un **Bearer Token** est un jeton d'authentification utilisé dans les requêtes HTTP, souvent dans le cadre de **l'authentification via OAuth**. Il est inclus dans l'en-tête de la requête (`Authorization: Bearer <token>`) et permet d'accéder à des ressources protégées sans avoir à fournir des identifiants à chaque requête.
+
+
+
+## liens fin de l'éxercice sur les requettes http :
+
+https://checkboxolympics.com/
+
+https://theuselessweb.com/
