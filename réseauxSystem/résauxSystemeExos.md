@@ -34,7 +34,6 @@
     - Cable Ethernet
     - router
     - switch
-    - 
 
 
 - ### Qu’est ce que la commande ping ? A quoi sert-elle ?
@@ -125,8 +124,99 @@ Pour configurer une adresse IP manuellement sur un PC et un serveur, suivez ces 
 
 ## exo 4
 
-- ### Problème avec l'ajout d'une carte réseau supplémentaire :**
+- ### Problème avec l'ajout d'une carte réseau supplémentaire :
    Ajouter une carte réseau au serveur complique la configuration, coûte de l'argent, et n'est pas pratique si on veut connecter plus d'appareils à l'avenir.
 
-- ### Quel équipement choisir pour l'interconnexion :**
+- ### Quel équipement choisir pour l'interconnexion :
    Il vaut mieux ajouter un **switch**. Cela permet de connecter plusieurs appareils facilement, sans configuration complexe, et c'est évolutif pour le futur.
+
+
+## exo 5
+
+> Soit l’adresse réseau suivante : 192.168.1.0
+
+- ### Quel est son masque ?
+
+L'adresse 192.168.1.0 a un masque de sous-réseau de /24, donc le masque est 255.255.255.0.
+
+- ### Combien d’adresses IP peut-on attribuer dans ce réseau. Attention, il y a un piège : faite une recherche sur l’adresse IP de broadcast
+
+Dans ce réseau, il y a 256 adresses possibles, mais on ne peut en utiliser que 254 parce que 192.168.1.0 est l'adresse réseau et 192.168.1.255 est l'adresse de broadcast.
+
+> Soit les adresses ip suivantes : 192.168.1.1/24 et 192.168.24.3/24
+
+- ### Quel est son masque ?
+
+255.255.255.0
+
+- ### Combien d’adresses IP peut-on attribuer dans ce réseau. Attention, il y a un piège : faite une recherche sur l’adresse IP de broadcast
+
+Pour les adresses 192.168.1.1/24 et 192.168.24.3/24, elles ne sont pas sur le même réseau. L'adresse réseau de 192.168.1.1 est 192.168.1.0 et celle de 192.168.24.3 est 192.168.24.0. Donc, deux réseaux différents !
+
+
+![alt text](./images/Capture%20d’écran%20du%202024-09-10%2016-48-49.png)
+
+
+- ## exo 6 
+
+### Modèle OSI et ses 7 couches :
+
+1. **Couche 1 : Physique (Physical)**  
+   - **Description** : Transmet les bits bruts (0 et 1) sur un support physique (câbles, ondes, etc.).
+   - **Élément associé** : Câbles Ethernet, fibres optiques.
+
+2. **Couche 2 : Liaison de données (Data Link)**  
+   - **Description** : Assure le transfert de données entre deux dispositifs sur le même réseau, et gère la détection des erreurs de transmission.
+   - **Élément associé** : Adresse MAC, commutateurs (switches).
+
+3. **Couche 3 : Réseau (Network)**  
+   - **Description** : Gère le routage des paquets à travers différents réseaux.
+   - **Élément associé** : Adresse IP, routeurs.
+
+4. **Couche 4 : Transport (Transport)**  
+   - **Description** : Assure la transmission fiable des données entre deux hôtes, avec gestion des erreurs et contrôle de flux.
+   - **Élément associé** : TCP, UDP.
+
+5. **Couche 5 : Session (Session)**  
+   - **Description** : Gère les sessions de communication (établir, maintenir et terminer la connexion).
+   - **Élément associé** : API sockets.
+
+6. **Couche 6 : Présentation (Presentation)**  
+   - **Description** : Formate et chiffre les données pour qu'elles soient interprétables par la couche application.
+   - **Élément associé** : SSL/TLS (cryptage), formats de fichiers (JPEG, MP3).
+
+7. **Couche 7 : Application**  
+   - **Description** : Interface avec l'utilisateur et les applications, permettant l'échange de données avec le réseau.
+   - **Élément associé** : HTTP, FTP, applications web.
+
+### Pourquoi le modèle OSI est important ?
+
+- **Structure claire** : Il divise la communication réseau en couches distinctes, facilitant la compréhension.
+- **Interopérabilité** : Permet à des équipements et logiciels de différents fabricants de fonctionner ensemble.
+- **Débogage** : Aide à identifier où se situe un problème dans le réseau (couche physique, transport, etc.).
+
+
+
+
+### Qu’est-ce que TCP et IP ?
+
+- **TCP (Transmission Control Protocol)** : Protocole qui garantit une transmission fiable des données entre deux machines.
+- **IP (Internet Protocol)** : Protocole qui gère l'adressage et le routage des paquets de données à travers les réseaux.
+
+### Les couches du modèle TCP/IP :
+
+1. **Accès réseau** : Combine les couches Physique et Liaison de données (OSI), gère la transmission des données sur un support physique.
+2. **Internet** : Équivalent à la couche Réseau (OSI), responsable du routage via les adresses IP.
+3. **Transport** : Assure la communication fiable (TCP) ou rapide (UDP) entre les hôtes.
+4. **Application** : Regroupe Application, Présentation, et Session (OSI), gère les interactions utilisateur et les données.
+
+### Lien avec le modèle OSI :
+
+- Accès réseau (TCP/IP) ⇔ Physique + Liaison (OSI)
+- Internet (TCP/IP) ⇔ Réseau (OSI)
+- Transport (TCP/IP) ⇔ Transport (OSI)
+- Application (TCP/IP) ⇔ Application + Présentation + Session (OSI)
+
+### Importance :
+
+Le modèle TCP/IP est la base d'Internet, plus simple et plus pratique que le modèle OSI.
