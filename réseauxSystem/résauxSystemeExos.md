@@ -220,3 +220,6 @@ Pour les adresses 192.168.1.1/24 et 192.168.24.3/24, elles ne sont pas sur le m�
 ### Importance :
 
 Le modèle TCP/IP est la base d'Internet, plus simple et plus pratique que le modèle OSI.
+
+
+![alt text](./images/Capture%20d’écran%20du%202024-09-11%2010-25-18.png)
