@@ -313,3 +313,120 @@ Un **Bearer Token** est un jeton d'authentification utilisé dans les requêtes 
 https://checkboxolympics.com/
 
 https://theuselessweb.com/
+
+
+
+# exos SSH
+
+## Quels sont les protocoles qui ont été remplacés par SSH ?
+
+Le protocole SSH a été conçu avec l'objectif de remplacer les différents protocoles non chiffrés comme rlogin, telnet, rcp et rsh.
+
+
+## Quelles sont les différents modes d’utilisation de SSH (notamment au niveau de la sécurité)?
+
+- Accès distant sécurisé :
+
+Mot de passe : Simple mais vulnérable aux attaques par force brute.
+
+Clés SSH : Méthode plus sécurisée via une paire de clés publique/privée.
+
+- Transfert sécurisé de fichiers :
+
+SCP (Secure Copy) et SFTP (SSH File Transfer Protocol) pour transférer des fichiers en toute sécurité.
+
+- Tunneling sécurisé :
+
+Permet de chiffrer le trafic réseau d'autres applications via SSH.
+
+- Port forwarding :
+
+Forwarding local et distant pour sécuriser l'accès à des services internes à un réseau.
+
+
+## Comment est établie une connection SSH entre un client et un serveur avec la méthode la plus sécurisé (faites un schéma)
+
+![alt text](./images/sshConnectionSchema.jpg)
+
+
+
+
+## php-fpm nginx
+
+### PHP-FPM et NGINX: Utilité et Interaction
+
+#### **NGINX**
+- **Serveur Web**: Sert les fichiers statiques (HTML, CSS, JS).
+- **Reverse Proxy**: Transmet les requêtes à des serveurs backend comme PHP-FPM pour le traitement des scripts PHP.
+- **Load Balancer**: Répartit la charge entre plusieurs serveurs.
+
+#### **PHP-FPM**
+- **Exécution PHP**: Traite les fichiers PHP et génère des réponses dynamiques.
+- **Gestion des Processus**: Optimise la gestion des ressources PHP avec plusieurs pools de processus.
+
+### Schéma de l'Interaction
+
+```
+Utilisateur
+    |
+    | Requête HTTP (GET /)
+    |
+   NGINX
+    |
+    | Fichier Statique ? 
+    |-- Oui --> Renvoie le fichier statique
+    |
+    |-- Non --> Passe à PHP-FPM
+    |
+ PHP-FPM
+    |
+    | Exécute le Script PHP
+    |
+    | Génère la Réponse HTML
+    |
+   NGINX
+    |
+    | Renvoie la Réponse à l'Utilisateur
+    |
+Utilisateur
+```
+
+### Résumé
+1. **Utilisateur** demande la page d'accueil.
+2. **NGINX** vérifie et transmet la requête à **PHP-FPM** si nécessaire.
+3. **PHP-FPM** exécute le script PHP et renvoie la réponse à **NGINX**.
+4. **NGINX** renvoie la réponse finale à l'utilisateur.
+
+## Limite de l'utilisation de de la méthode pour déployer le sites
+
+Voici un résumé des problématiques liées à la gestion de diverses technologies (Node.js, Python, Go, Java) pour TechFlow :
+
+### 1. **Gestion des Dépendances et Environnements**
+- **Problème** : Chaque technologie a ses propres dépendances et versions, ce qui complique l'isolation et la gestion des versions.
+- **Solution** : Utiliser des conteneurs Docker pour isoler les environnements.
+
+### 2. **Déploiement Multi-Technologies**
+- **Problème** : Les processus de déploiement varient selon les technologies, et la gestion des ressources devient complexe.
+- **Solution** : Adopter Kubernetes pour orchestrer les conteneurs de différentes technologies.
+
+### 3. **CI/CD**
+- **Problème** : Les pipelines CI/CD doivent gérer des étapes spécifiques pour chaque technologie, augmentant la complexité.
+- **Solution** : Créer des pipelines modulaires adaptés à chaque technologie avec des outils CI flexibles.
+
+### 4. **Sécurité et Mises à Jour**
+- **Problème** : Chaque technologie a des vulnérabilités spécifiques à surveiller et des pratiques de sécurité différentes.
+- **Solution** : Utiliser des outils de sécurité adaptés à chaque langage et maintenir une politique de mise à jour régulière.
+
+### 5. **Compatibilité et Intégration**
+- **Problème** : Les différentes applications doivent interagir, ce qui nécessite des standards de communication.
+- **Solution** : Utiliser des protocoles d'échange standardisés comme REST ou gRPC.
+
+### 6. **Formation et Compétences**
+- **Problème** : Former des développeurs sur plusieurs technologies peut être coûteux et ralentir la productivité.
+- **Solution** : Spécialiser les équipes tout en favorisant la collaboration entre elles.
+
+### 7. **Standardisation des Pratiques**
+- **Problème** : Maintenir des standards cohérents à travers différentes technologies peut être difficile.
+- **Solution** : Établir des pratiques de développement communes mais flexibles pour chaque technologie.
+
+En résumé, la clé est de standardiser autant que possible tout en utilisant des outils modernes pour gérer la diversité technologique.
