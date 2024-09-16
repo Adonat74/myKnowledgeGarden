@@ -7,3 +7,7 @@ https://doc.ubuntu-fr.org/ssh
 
 https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mysql-php-lemp-stack-on-ubuntu-20-04-fr
 
+
+## installer le certificat ssl sur le site et le serveur: 
+
+https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-20-04-fr
