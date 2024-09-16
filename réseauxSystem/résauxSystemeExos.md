@@ -430,3 +430,16 @@ Voici un résumé des problématiques liées à la gestion de diverses technolog
 - **Solution** : Établir des pratiques de développement communes mais flexibles pour chaque technologie.
 
 En résumé, la clé est de standardiser autant que possible tout en utilisant des outils modernes pour gérer la diversité technologique.
+
+
+
+## Docker
+
+### Différence entre une image Docker et un conteneur
+
+- **Image Docker** : Fichier statique avec tout le nécessaire pour exécuter une application. Immobile et immuable.
+- **Conteneur** : Instance en cours d'exécution d'une image, modifiable et temporaire.
+
+### Que fait Docker si l’image demandée n’est pas locale ?
+
+Docker télécharge l’image depuis un registre (comme Docker Hub) et l’installe localement avant de créer le conteneur.
