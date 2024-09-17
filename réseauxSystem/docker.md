@@ -30,8 +30,11 @@ https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository
 |docker stop {container id}|arrête un conteneur lancé|
 |docker logs {container id}|permet d'afficher les logs d'un conteneur|
 |sudo systemctl stop docker |Arrêt de docker|
-|||
-|||
+|docker container prune|delete all stopped containers|
+|exec -it|permet d'éxécuter une commande dans le conteneur|
+|docker volume ls|liste les volumes|
+|exec -it|permet d'éxécuter une commande dans le conteneur|
+|exec -it|permet d'éxécuter une commande dans le conteneur|
 
 ## Docker options:
 
@@ -39,6 +42,31 @@ https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository
 |-|-|
 |-p 8080:80|bind le port de l'image dans docker avec le port précisé dans la commande sur la machine hote|
 |-d ou --detache|lance un conteneur sans les logs|
+|--rm|permet de spécifier de supprimer le conteneur lorsqu'il sera arrêté|
+|-v|permet de déclarer un volume persistant|
 |||
-|||
-|||
+
+- ## mariadb volume container run:
+
+```
+sudo docker exec -it silly_gagarin mariadb -uroot -p
+```
+
+|sudo docker|exec -it |silly_gagarin| mariadb -uroot -p|
+|-|-|-|-|
+|Commande docker de base|permet d'éxécuter une commande dans le conteneur|le nom du conteneur|la commande à éxécuter dans le conteneur|
+
+> permet d'ouvrir et de se connecter à mariadb
+
+
+- ## mariadb connection line example:
+
+```
+sudo docker run -v backup-volume:/var/lib/mysql -d -p 3307:80 --env MARIADB_ROOT_PASSWORD=root mariadb:latest  
+```
+
+|-v |backup-volume|:/var/lib/mysql|
+|-|-|-|
+|tag permettant de signaler un volume|nom du volume|répertoire sur la machine qui contient le volume|
+
+> permet de lancer un conteneur en utilisant un volume pour faire persister des données.
