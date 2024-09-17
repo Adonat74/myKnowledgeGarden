@@ -33,8 +33,9 @@ https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository
 |docker container prune|delete all stopped containers|
 |exec -it|permet d'éxécuter une commande dans le conteneur|
 |docker volume ls|liste les volumes|
-|exec -it|permet d'éxécuter une commande dans le conteneur|
-|exec -it|permet d'éxécuter une commande dans le conteneur|
+|docker ps -q|Lists the IDs of all running containers.|
+|docker stop $(docker ps -q)|permet de stopper tous les conteneurs en route|
+|docker rm -f $(docker ps -aq)|permet de stopper et de supprimer tous les conteneurs|
 
 ## Docker options:
 
