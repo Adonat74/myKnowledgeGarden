@@ -22,3 +22,7 @@
 
 Service permettant de de faire communiquer entre eux d'autres services qui s'enregistrent dessus
 ainsi évitant de coder en dur les adresses IP et ports.
+
+## beans
+
+https://www.axopen.com/blog/2019/02/java-spring-les-beans/
