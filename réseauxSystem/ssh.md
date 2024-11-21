@@ -74,3 +74,4 @@ Voici comment l'authentification se déroule :
 
 ### Conclusion
 Les clés SSH sont un exemple concret de l'utilisation du système de clés publiques et privées dans le domaine de la sécurité informatique. Elles exploitent cette technologie pour offrir une méthode d'authentification robuste et sécurisée.
+

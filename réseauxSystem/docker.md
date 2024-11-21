@@ -71,3 +71,62 @@ sudo docker run -v backup-volume:/var/lib/mysql -d -p 3307:80 --env MARIADB_ROOT
 |tag permettant de signaler un volume|nom du volume|répertoire sur la machine qui contient le volume|
 
 > permet de lancer un conteneur en utilisant un volume pour faire persister des données.
+
+- ## écrire un docker file
+
+https://blog.stephane-robert.info/docs/conteneurs/images-conteneurs/ecrire-dockerfile/
+
+- ## Principe de docker et comment les conteneurs communiquent avec les autres programmes.
+
+  ![Image of a schema of a web architecture](../images/docker.jpg)
+
+
+
+- ## docker compose 
+
+- ## Sécuriser le conteneur
+
+Il faut changer le nom dans le docker file lors du runner et ajouter  --chown=node:node avant chaques COPY
+
+PUIS rebuild l'image du conteneur!!
+
+``` dockerfile
+# We start for a docker image named "node:20-slim"
+# see https://hub.docker.com/_/node
+# We use base as an alias name
+FROM node:20-slim AS base
+# We'll work inside the directory /app
+WORKDIR /app
+
+######################################
+# First stage (build the app)
+FROM base as builder
+# Copy project file
+COPY . .
+# Run npm install
+# We use "npm ci" instead of "npm install"
+# Read https://docs.npmjs.com/cli/v7/commands/npm-ci for explaination
+RUN npm ci
+# We run our custom build script
+RUN npm run build
+
+######################################
+# Second stage (build the production container)
+FROM base AS runner
+
+# our base image "node" has a user named "node"
+# After that line, all command run inside the conatiner will be launched by the "node" user 
+USER node
+
+# Here we copy a file from "builder" stage to the current "runner" stage
+# We also need to change the owner of the files to ensure the "node" user can access them
+COPY --from=builder --chown=node:node /app/node_modules /app/node_modules
+# TODO Add missing COPY to complete the production container
+# ......
+
+# The container will expose port 3000
+EXPOSE 3000
+
+# Start command to use for the conaitner
+CMD node api/api.js
+```
