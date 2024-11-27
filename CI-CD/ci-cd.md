@@ -97,3 +97,18 @@ export default defineConfig({
 ## JUNIT
 
 Junit est un framework de test pour Java dont la structure XML de réponse est largement utilisée et suportée par les autres langages et frameworks de tests
+
+
+
+## principe déploiement: 
+
+Le déploiement s'effectue en ajoutant le fichier docker-compose.yml sur le serveur et préciser qu'il faut utiliser l'image docker précédement publiée dans le registre gitlab 
+
+fichier yml : 
+```yml
+services:
+  web:
+    image: registry.gitlab.com/<namespace>/<project>:<tag>
+    ports:
+      - "80:80"
+```
