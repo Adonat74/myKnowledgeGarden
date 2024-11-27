@@ -112,3 +112,6 @@ services:
     ports:
       - "80:80"
 ```
+Schéma de péploiement
+
+![Image of a schema of a web architecture](../images/Capture%20d’écran%20du%202024-11-27%2011-50-53.png)
