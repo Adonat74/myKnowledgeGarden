@@ -158,3 +158,14 @@ https://medium.com/@hendriks96/api-authenticate-how-to-authenticate-api-using-la
 
 
 https://www.twilio.com/fr-fr/blog/api-restful-php-laravel-sanctum
+
+
+## Permettre la connexion à l'api depuis un autre pc sur le même réseau:
+
+Il faut lancer le serveur sur le host 0.0.0.0:
+
+```
+php artisan serve --host=0.0.0.0 --port=8000
+```
+
+de cette façon avec l'ip à la place du host les autres pc y auront accès.
