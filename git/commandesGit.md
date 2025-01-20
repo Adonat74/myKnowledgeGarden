@@ -15,6 +15,7 @@
     | git commit -m "message descriptif" | Enregistre des instantanés de fichiers de façon permanente dans l'historique des versions |
     | git pull | Récupère tout l'historique du dépôt nommé et incorpore les modifications |
     | git push origin [branche] | Envoie tous les commits de la branche locale vers GitHub |
+    | git push -u origin [branche] | Envoie tous les commits de la branche locale vers GitHub |
     | git status | Permet de voir sur quelle branche on se trouve |
     | git checkout <commit-id> | Permet de revenir à un commit passé |
     | git checkout [branche-name] | Permet de changer de branche et rde revenir à la version actuelle si l'on étais sur un ancien commit |
