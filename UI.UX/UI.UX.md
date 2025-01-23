@@ -74,15 +74,7 @@ https://openclassrooms.com/fr/courses/3013856-ux-design-decouvrez-les-fondamenta
 Créers en priorité des personas dans les extrèmes.
 
 Que doit-on inclure dans le persona?
-
-- situation professionelle
-- Age
-- habitudes/scénarios
-- cas d'usage
-
-### L'affordance
-
-faire en sorte que le produit soit accessible, facilement pris en main et que l'utilisateur comprenne rapidement comment il fonctionne.
+mld
 
 https://openclassrooms.com/fr/courses/3013856-ux-design-decouvrez-les-fondamentaux/4053056-comprenez-le-principe-daffordance
 

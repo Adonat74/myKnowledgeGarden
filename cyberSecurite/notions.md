@@ -71,3 +71,10 @@ https://www.ba-info.fr/la-cybersecurite-au-travail-des-responsabilites-partagees
 
 
 
+## Outils pour le développement 
+
+
+## Password storing
+
+https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html
+
