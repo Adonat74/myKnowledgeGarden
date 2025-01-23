@@ -19,6 +19,10 @@
 
 https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository
 
+for ubuntu
+
+https://www.youtube.com/watch?v=geNvWXac2Mg
+
 
 ## Docker commands:
 
