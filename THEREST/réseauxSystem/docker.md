@@ -37,6 +37,12 @@ https://www.youtube.com/watch?v=geNvWXac2Mg
 | docker ps -q                  | Lists the IDs of all running containers.              |
 | docker stop $(docker ps -q)   | permet de stopper tous les conteneurs en route        |
 | docker rm -f $(docker ps -aq) | permet de stopper et de supprimer tous les conteneurs |
+| docker volume ls | permet de lister les volumes |
+| docker compose up | permet d'xecuter le fichier docker-compose.yml et de lancer le conteneurs |
+| docker compose down | permet de stoper les conteneurs et de les supprimer |
+
+
+
 
 ## Docker options:
 
