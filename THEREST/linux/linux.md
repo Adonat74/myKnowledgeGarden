@@ -27,13 +27,14 @@
 
     | commande | A quoi elle sert |
     | - | - |
-    | ls | Permet de lister le contenu du répertoire courant (actuel) |
-    | cd | aller dans le répertoire home |
-    | cd .. | Remonte d'un dossier |
-    | cd *dir* | Accède au dossier *dir* |
-    | mkdir *dir* | Créer un dossier avec le nom *dir* |
-    | pwd | Affiche le lien du dossier actuel |
-    | touch *file* | Créer un fichier avec le nom *file* |
     | cp *file1* *file2* | Copie *file1* dans *file2* |
     | mv *file1* *file2* | Déplace *file1* dans *file2* |
+    | rm *file* | Supprime *file* |
+    | grep | Supprime *file* |
+    | vi | Supprime *file* |
+    | rm *file* | Supprime *file* |
+    | rm *file* | Supprime *file* |
+    | rm *file* | Supprime *file* |
+    | rm *file* | Supprime *file* |
+    | rm *file* | Supprime *file* |
     | rm *file* | Supprime *file* |
