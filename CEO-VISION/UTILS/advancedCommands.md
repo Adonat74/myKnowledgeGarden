@@ -9,6 +9,7 @@
 |git cherry-pick [nom commit]|Cherry-pick permet, lorsqu'on se trouve sur une branche, de sélectionner un commit spécifique d'une autre branche (peu importe son ordre dans l'historique) et de l'appliquer à la branche actuelle, sans avoir besoin de fusionner toute la branche d'origine.|
 |scp|Permet de copier un fichier ou dossier depuis un serveur distant directement sur sa machine doc : https://linux.die.net/man/1/scp|
 |mysqldump|Permet d'exporter une ou plusieur db et/ou d'exclure des tables doc : https://mysqldump.guru|
+|zip <option> <fichier.zip> <folder> |Grâce au package zip on peut compresser des fichiers/dossier au format .zip|
 
 
 
