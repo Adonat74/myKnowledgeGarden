@@ -10,6 +10,7 @@
 |scp|Permet de copier un fichier ou dossier depuis un serveur distant directement sur sa machine doc : https://linux.die.net/man/1/scp|
 |mysqldump|Permet d'exporter une ou plusieur db et/ou d'exclure des tables doc : https://mysqldump.guru|
 |zip <option> <fichier.zip> <folder> |Grâce au package zip on peut compresser des fichiers/dossier au format .zip|
+|docker exec -it --user=root |permet de rentre dans le shell du conteneur en étant en root permet de faire pleins d'actions genre touch|
 
 
 

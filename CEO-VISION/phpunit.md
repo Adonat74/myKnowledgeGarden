@@ -33,7 +33,51 @@ the run : `./vendor/bin/phpunit -v -c ./core/phpunit.xml ./modules/custom/ceo_vi
 
 
 
+## Example tests simple pour le module ceo_vision
 
+```php
+<?php
+
+namespace Drupal\Tests\ceo_vision\Unit;
+
+use Drupal\Tests\UnitTestCase;
+use Drupal\ceo_vision\Controller\CeovisionController;
+use Drupal\Core\Render\RendererInterface;
+use Symfony\Component\HttpFoundation\Response;
+
+
+
+class CeovisionControllerTest extends UnitTestCase {
+  
+    public function testNewsletterRoute () {
+
+        $controller = new CeovisionController();
+
+        $this->assertEquals(['#theme' => 'ceo_vision_newsletter',], $controller->newsletter());
+        $this->assertIsArray($controller->newsletter());
+    }
+
+
+    public function testNewsletter_blankRoute () {
+
+        $renderer = $this->createMock(RendererInterface::class);
+        $renderer->method('render')
+            ->willReturn('<div>Rendered Content</div>');
+
+        \Drupal::setContainer(
+            new \Symfony\Component\DependencyInjection\ContainerBuilder()
+        );
+        \Drupal::getContainer()->set('renderer', $renderer);
+
+        $controller = new CeovisionController();
+
+        $response = $controller->newsletter_blank();
+
+        $this->assertInstanceOf(Response::class, $response);
+        $this->assertEquals($response->getContent(), '<div>Rendered Content</div>');
+    }
+}
+```
 
 
 
